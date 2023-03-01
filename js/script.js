@@ -1,5 +1,5 @@
 /* Exercício 1 */
-const elementSoma = document.getElementById("soma")
+const elementSoma = document.getElementById("soma");
 let indice = 13,
   soma = 0,
   k = 0;
@@ -17,7 +17,6 @@ function exercicio2() {
   const input = document.querySelector("#fibonacci");
   const form = document.querySelector("#questao2 form");
   const frase = document.querySelector(".frase");
-
   if (input) {
     const handleSubmit = (event) => {
       event.preventDefault();
@@ -25,15 +24,24 @@ function exercicio2() {
       let num1 = 1,
         num2 = 0;
 
+      // Estou limitando o número que vem do input
+      if (inputValue > 100) {
+        inputValue = 10;
+        // form.innerHTML += `<p>O valor máximo permitido é 100</p>`
+      }
+
       for (let i = 0; i < inputValue; i++) {
         num1 = num1 + num2;
         num2 = num1 - num2;
         frase.innerHTML += `<span>${num1},</span>`;
       }
     };
-
     form.addEventListener("submit", handleSubmit);
   }
+  frase.innerHTML += `
+    <span>0,</span>
+    <span>1,</span>
+  `;
 }
 exercicio2();
 
@@ -45,7 +53,7 @@ const exercicio3 = async () => {
   const maior = document.getElementById("maior");
   const fatMens = document.getElementById("fat-mens");
 
-  const response = await fetch(`../dados.json`);
+  const response = await fetch(`/dados.json`);
   const json = await response.json();
 
   // const valores = json.filter((item) => item.valor !== 0);
