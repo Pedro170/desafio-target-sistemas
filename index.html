@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste - Target Sistemas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header-bg">
+    <div class="header">
+      <div class="logo"><a href="./"><b>Pedro</b></a></div>
+
+      <nav aria-label="primaria">
+        <ul class="header-menu">
+          <li><a href="#">Questão 1º</a></li>
+          <li><a href="#questao2">Questão 2º</a></li>
+          <li><a href="#questao3">Questão 3º</a></li>
+          <li><a href="#questao4">Questão 4º</a></li>
+          <li><a href="#questao5">Questão 5º</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="container-box" aria-label="questão 1">
+      <h2><span class="num-quest">1</span> Observe o trecho de código abaixo:</h2>
+      <code>
+        int INDICE = 13, SOMA = 0, K = 0;
+        <br>
+        enquanto K &le; INDICE faça { <br>
+          <div>
+            K = K + 1; <br>
+            SOMA = SOMA + K;
+          </div>
+        <br>}
+      
+        imprimir(SOMA);
+      </code>
+
+      <p>Ao final do processamento, qual será o valor da variável SOMA? <b id="soma"></b></p>
+    </section>
+
+    <section class="container-box" aria-label="questão 1" id="questao2">
+      <h2>
+        <span class="num-quest">2</span>
+        Dado a sequência de Fibonacci, onde se inicia por 0 e 1 e o próximo valor sempre será a soma dos 2 valores
+        anteriores (exemplo: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34...), escreva um programa na linguagem que desejar onde,
+        informado um número, ele calcule a sequência de Fibonacci e retorne uma mensagem avisando se o número informado
+        pertence ou não a sequência.
+      </h2>
+
+      <div class="container-form">
+        <form>
+          <label for="fibonacci">
+            <span>Número para sequência</span>
+            <input type="number" name="fibonacci" id="fibonacci" placeholder="Digite um valor">
+          </label>
+          <button>verificar</button>
+
+          <div class="frase">
+            0, 1,
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="container-box" aria-label="questão 3" id="questao3">
+      <h2>
+        <span class="num-quest">3</span>
+        Dado um vetor que guarda o valor de faturamento diário de uma distribuidora, faça um programa, na linguagem
+        que desejar, que calcule e retorne:
+        <ul>
+          <li>• O menor valor de faturamento ocorrido em um dia do mês;</li>
+          <li>• O maior valor de faturamento ocorrido em um dia do mês;</li>
+          <li>• Número de dias no mês em que o valor de faturamento diário foi superior à média</li>
+        </ul>
+        mensal.
+      </h2>
+
+      <div class="container-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Janeiro</th>
+              <th>Valor</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+      <div class="valores">
+        <p id="menor">O menor valor de faturamento ocorrido em um dia do mês: </p>
+        <p id="maior">O maior valor de faturamento ocorrido em um dia do mês: </p>
+        <p id="fat-mens">Número de dias no mês em que o valor de faturamento diário foi superior à média mensal. </p>
+      </div>
+    </section>
+
+    <section class="container-box" aria-label="questão 4" id="questao4">
+      <h2>
+        <span class="num-quest">4</span>
+        Dado o valor de faturamento mensal de uma distribuidora, detalhado por estado:
+        <ul>
+          <li>SP – R$67.836,43</li>
+          <li>RJ – R$36.678,66</li>
+          <li>MG – R$29.229,88</li>
+          <li>ES – R$27.165,48</li>
+          <li>Outros – R$19.849,53</li>
+        </ul>
+
+        Escreva um programa na linguagem que desejar onde calcule o percentual de representação que cada estado teve
+        dentro do valor total mensal da distribuidora.
+      </h2>
+
+      <div class="questao4-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Estados</th>
+              <th>Faturamento</th>
+              <th>Faturamento Total</th>
+            </tr>
+          </thead>
+          <!-- <tbody>
+            <tr>
+              <td>São Paulo</td>
+              <td>R$ 67.836,43</td>
+              <td>
+                <div class="progress-bar">
+                  <span class="progress"></span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Rio de Janeiro</td>
+              <td>R$ 36.678,66</td>
+              <td>
+                <div class="progress-bar">
+                  <span class="progress"></span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Minas Gerais</td>
+              <td>R$ 29.229,88</td>
+              <td>
+                <div class="progress-bar">
+                  <span class="progress"></span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Espiro Santo</td>
+              <td>R$ 27.165,48</td>
+              <td>
+                <div class="progress-bar">
+                  <span class="progress"></span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Outros</td>
+              <td>R$ 19.849,53</td>
+              <td>
+                <div class="progress-bar">
+                  <span class="progress"></span>
+                </div>
+              </td>
+            </tr>
+          </tbody> -->
+        </table>
+      </div>
+    </section>
+
+    <section class="container-box" aria-label="questão 4" id="questao5">
+      <h2>
+        <span class="num-quest">5</span>
+        Escreva um programa que inverta os caracteres de um string. IMPORTANTE:
+        <b>a</b> 
+          Essa string pode ser informada através de qualquer entrada de sua preferência ou pode ser previamente definida no código;
+          <b>b</b>
+          Evite usar funções prontas, como, por exemplo, reverse;
+      </h2>
+
+      <div class="container-form">
+        <form>
+          <label for="palavra">
+            <span>Palavra</span>
+            <input type="text" name="palavra" id="palavra" placeholder="João Pedro">
+          </label>
+
+          <button>inverter</button>
+
+          <div class="frase"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="js/script.js"></script>
+</body>
+
+</html>
