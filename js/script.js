@@ -9,7 +9,7 @@ while (k < indice) {
   soma += +k;
 }
 
-elementSoma.innerHTML += soma;
+elementSoma.innerHTML += `O valor da soma será de: ${soma}`;
 
 /* Exercício 2 */
 
@@ -17,7 +17,6 @@ function exercicio2() {
   const input = document.querySelector("#fibonacci");
   const form = document.querySelector("#questao2 form");
   const frase = document.querySelector(".frase");
-  frase.innerHTML = ""
   if (input) {
     const handleSubmit = (event) => {
       event.preventDefault();
@@ -25,9 +24,9 @@ function exercicio2() {
       let num1 = 1,
         num2 = 0;
 
-      // Estou limitando o número que vem do input
+      // Estou limitando o número que vem do input para 100
       if (inputValue > 100) {
-        inputValue = 10;
+        inputValue = 100;
         // form.innerHTML += `<p>O valor máximo permitido é 100</p>`
       }
 
@@ -91,7 +90,7 @@ const exercicio3 = async () => {
       <tbody>
         <tr>
           <td>dia ${idx + 1}</td>
-          <td>${valor}</td>
+          <td>R$ ${valor}</td>
         </tr>
       </tbody>
     `;
@@ -165,6 +164,8 @@ function exercicio5() {
   const form = document.querySelector("#questao5 form");
   const input = document.querySelector("#palavra");
   const frase = document.querySelector("#questao5 .frase");
+
+  console.log(input.innerHTML);
 
   if (input) {
     const reverseString = (event) => {
