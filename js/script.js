@@ -17,6 +17,7 @@ function exercicio2() {
   const input = document.querySelector("#fibonacci");
   const form = document.querySelector("#questao2 form");
   const frase = document.querySelector(".frase");
+  frase.innerHTML = ""
   if (input) {
     const handleSubmit = (event) => {
       event.preventDefault();
@@ -53,7 +54,7 @@ const exercicio3 = async () => {
   const maior = document.getElementById("maior");
   const fatMens = document.getElementById("fat-mens");
 
-  const response = await fetch(`/dados.json`);
+  const response = await fetch(`dados.json`);
   const json = await response.json();
 
   // const valores = json.filter((item) => item.valor !== 0);
