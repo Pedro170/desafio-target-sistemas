@@ -20,4 +20,4 @@ Acesse nesse link a página do projeto
 - João Pedro dos Santos
 
 ---
-com ❤️ por [João Pedro](https://gist.github.com/lohhans) 😊
+com ❤️ por [João Pedro](https://github.com/Pedro170) 😊
